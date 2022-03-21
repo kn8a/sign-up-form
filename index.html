@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="title-left">
+                <h1>Odin Adventure</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <p>There is no greater adventure than truthfully filling out an online form that you dont know. 
+                    This page gives you that experience. 
+                    (This form doesnt actually send anything anywhere).  </p>
+                <p>Are you brave enough to try?</p>
+            </div>
+            <div class="form-div">
+                <form class="form">
+                    <h2>Start your adventure now!</h2>
+                    <div class="fields-div">
+                        
+                            <div>
+                                <div>
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" name="first-name" id="first-name" required minlength="2" maxlength="20" autocomplete="off" placeholder="John">
+                                </div>
+                                <div>
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" name="last-name" id="last-name" minlength="2" maxlength="20" required autocomplete="off" placeholder="Doe">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" required autocomplete="off" placeholder="name@domain.com">
+                                </div>
+                                <!-- pattern="/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi" -->
+                                <div>
+                                    <label for="phone">Phone number</label>
+                                    <input type="tel" name="phone" id="phone" required autocomplete="off" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-456-7890">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="pass">Password</label>
+                                    <input type="password" name="pass" class="error" id="pass" required autocomplete="off" placeholder="min 8 characters" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                                </div>
+                                <div>
+                                    <label for="cnfrm-pass">Confirm Password</label>
+                                    <input type="password" name="cnfrm-pass" id="cnfrm-pass" autocomplete="off" required>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="button-div"><button class="submit" type="submit">Submit</button></div>
+                            <h4>Already experienced the adventure? <a href="#">Log in</a> </h4>
+                            
+                        
+                        
+                    </div>
+                    
+                </form>
+
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
